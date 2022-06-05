@@ -1,11 +1,38 @@
-body{
-    padding: 0;
-    margin:0;
-    font-family: 'roboto',sans-serif;
-    box-sizing: border-box;
-    background-color:#dbcece;
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "roboto", sans-serif;
+  box-sizing: border-box;
+  background-color: #dbcece;
 }
 
-.subscribeForm{
-    
+.subscribeForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.inputContainer {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ececee;
+  box-shadow: 01px 10px 15px #e7c4c4, -10px -10px 15px #fff;
+}
+
+.inputContainer input {
+  font-size: 18px;
+  color: #000;
+  padding: 15px 10px;
+  border: none;
+  outline: none;
+  background-color: #ececee;
+}
+
+#submitButton {
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 20px;
+  border: none;
+  background: #5959d4;
 }
