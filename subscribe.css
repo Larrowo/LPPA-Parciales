@@ -3,7 +3,17 @@ body {
   margin: 0;
   font-family: "roboto", sans-serif;
   box-sizing: border-box;
-  background-color: #dbcece;
+  background-color: #efdede;
+}
+
+
+/* Formulario de subscripción */
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .subscribeForm {
@@ -11,13 +21,16 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  border: 3px solid #d00c0c;
 }
 
 .inputContainer {
+
   padding: 10px;
+  border: 1px solid black ;
   border-radius: 5px;
   background-color: #ececee;
-  box-shadow: 01px 10px 15px #e7c4c4, -10px -10px 15px #fff;
+  /* box-shadow: 01px 10px 15px #e7c4c4, -10px -10px 15px #fff; */
 }
 
 .inputContainer input {
@@ -35,4 +48,5 @@ body {
   font-size: 20px;
   border: none;
   background: #5959d4;
+  margin-top: 20px;
 }
