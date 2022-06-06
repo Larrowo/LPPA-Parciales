@@ -3,8 +3,20 @@ body {
     margin: 0;
     font-family: "roboto", sans-serif;
     box-sizing: border-box;
-    background-color: #efdede;
-  }
+    background-image: linear-gradient(
+      180deg,
+      hsl(240deg 100% 20%) 0%,
+      hsl(256deg 85% 25%) 11%,
+      hsl(262deg 70% 30%) 22%,
+      hsl(266deg 61% 36%) 33%,
+      hsl(270deg 53% 42%) 44%,
+      hsl(273deg 48% 48%) 56%,
+      hsl(277deg 49% 53%) 67%,
+      hsl(280deg 57% 59%) 78%,
+      hsl(283deg 68% 65%) 89%,
+      hsl(286deg 83% 72%) 100%
+    );
+}
   
   /* Site header */
   

@@ -1,17 +1,21 @@
-
 /* Formulario de subscripción */
 
-form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border:3px solid rgb(218, 238, 218);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
+  width: 40vw;
 }
 
-
-p{
-  font-size: 18px;
+p {
+  font-size: 20px;
   margin-bottom: 15px;
+  padding-top: 10px;
+  Color:white;
 }
 
 .subscribeForm {
@@ -22,19 +26,13 @@ p{
   border: 3px solid #ffffff;
 }
 
-.left-column{
-  float: left;
-}
-
-.right-column{
-  float: right;
-}
 
 .inputContainer {
   padding: 10px;
-  border: 1px solid black ;
+  border: 1px solid #000000;
   border-radius: 5px;
   background-color: #ececee;
+  margin: 10px;
 }
 
 .inputContainer input {
@@ -44,6 +42,9 @@ p{
   border: none;
   outline: none;
   background-color: #ececee;
+  text-indent: 10px;
+  width: 100%;
+  box-sizing:border-box;
 }
 
 .inputContainer select {
@@ -54,10 +55,9 @@ p{
   outline: none;
   background-color: #ececee;
   width: 100%;
-
 }
 
-#countries{
+#countries {
   direction: initial;
 }
 
@@ -73,14 +73,6 @@ p{
 
 @media (max-width: 800px) {
 
-
-
-
 }
-
-
-
-
-/* DROPDOWN TESTING */
 
 
