@@ -1,5 +1,7 @@
 /* Formulario de subscripción */
 
+
+
 form {
   display: flex;
   justify-content: center;
@@ -8,7 +10,9 @@ form {
   border:3px solid rgb(218, 238, 218);
   border-radius: 10px;
   box-shadow: 5px 5px 10px;
-  width: 40vw;
+  margin-top: 300px;
+ overflow: auto;
+ box-sizing:border-box;
 }
 
 p {
@@ -33,6 +37,10 @@ p {
   border-radius: 5px;
   background-color: #ececee;
   margin: 10px;
+}
+
+.inputContainer.comentario{
+height: 200px
 }
 
 .inputContainer input {
@@ -76,3 +84,43 @@ p {
 }
 
 
+
+
+.check-box-group {
+  display: flex;
+  flex-flow:wrap;
+  justify-content: space-between;
+  
+}
+
+.custom-checkbox {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+ 
+}
+
+.custom-checkbox .label {
+  font-size: 1.2em;
+  margin: 0 10px;
+}
+
+.custom-checkbox .checkmark {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #222;
+  display: inline-block;
+  border-radius: 3px;
+  background: rgb(0, 0, 0) url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/1200px-White_check.svg.png) center/1250% no-repeat;
+  transition: background-size 0.2s ease;
+}
+
+.custom-checkbox input:checked + .checkmark {
+  background-size: 60%;
+  transition: background-size 0.25s cubic-bezier(0.7, 0, 0.18, 1.24);
+}
+
+.custom-checkbox input {
+  display: none;
+}

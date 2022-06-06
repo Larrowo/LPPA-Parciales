@@ -4,30 +4,34 @@ body {
     font-family: "roboto", sans-serif;
     box-sizing: border-box;
     background-image: linear-gradient(
-      180deg,
-      hsl(240deg 100% 20%) 0%,
-      hsl(256deg 85% 25%) 11%,
-      hsl(262deg 70% 30%) 22%,
-      hsl(266deg 61% 36%) 33%,
-      hsl(270deg 53% 42%) 44%,
-      hsl(273deg 48% 48%) 56%,
-      hsl(277deg 49% 53%) 67%,
-      hsl(280deg 57% 59%) 78%,
-      hsl(283deg 68% 65%) 89%,
-      hsl(286deg 83% 72%) 100%
-    );
+  180deg,
+  hsl(240deg 100% 20%) 0%,
+  hsl(289deg 100% 21%) 11%,
+  hsl(315deg 100% 27%) 22%,
+  hsl(329deg 100% 36%) 33%,
+  hsl(337deg 100% 43%) 44%,
+  hsl(357deg 91% 59%) 56%,
+  hsl(17deg 100% 59%) 67%,
+  hsl(34deg 100% 53%) 78%,
+  hsl(45deg 100% 50%) 89%,
+  hsl(55deg 100% 50%) 100%
+);
 }
   
   /* Site header */
   
+
+  h1{
+    color: #ffffff;
+  }
 
   
   .siteHeader {
     padding: 30px;
     text-align: center;
     color: #333;
-    background-color: #f1f1f1;
-    border: 2px solid black;
+    background-color: #3d3939;
+    border: 2px solid #000000;
     margin-bottom: 10px;
   }
   
