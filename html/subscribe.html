@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Subscripcion</title>
     <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/dafaultPage.css">
-    <link rel="stylesheet" href="/css/subscribe.css">
+    <link rel="stylesheet" href="/css/dafaultPage.css" />
+    <link rel="stylesheet" href="/css/subscribe.css" />
     <script src="/JS/main.js" defer></script>
 </head>
 
@@ -20,53 +20,69 @@
     <nav class="navBar">
         <div class="brandTitle">Brand Name</div>
         <!-- <div class="toggle-button-container"> -->
-          <a href="#" class="toggle-button">
+        <a href="#" class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-          </a>
+        </a>
         <!-- </div> -->
         <div class="navbar-links">
-          <ul>
-            <li class="navItem"><a href="">Conozcanos</a></li>
-            <li class="navItem"><a href="">Información</a></li>
-            <li class="navItem"><a href="/html/index.html">INICIO</a></li>
-            <li class="navItem"><a href="">Algo</a></li>
-            <li class="navItem"><a href="">Algo</a></li>
-            <li class="navItem"><a href="/html/subscribe.html">subscribe</a></li>
-          </ul>
+            <ul>
+                <li class="navItem"><a href="">Conozcanos</a></li>
+                <li class="navItem"><a href="">Información</a></li>
+                <li class="navItem"><a href="/html/index.html">INICIO</a></li>
+                <li class="navItem"><a href="">Algo</a></li>
+                <li class="navItem"><a href="">Algo</a></li>
+                <li class="navItem"><a href="/html/subscribe.html">subscribe</a></li>
+            </ul>
         </div>
-      </nav>
+    </nav>
     <main class="subscribeMainPage">
         <div class="subscribeForm">
             <form action="#">
                 <p>Formulario de subscripcion</p>
-                <div class="inputContainer">
-                    <input type="text" id="name" placeholder="Nombre">
-                    <label for="name" id="lblName"></label>
+                <div class="left-column">
+                    <div class="inputContainer">
+                        <input type="text" id="name" placeholder="Nombre" />
+                        <label for="name" id="lblName"></label>
+                    </div>
+                    <div class="inputContainer">
+                        <input type="text" id="surname" placeholder="Apellido" />
+                        <label for="surname" id="lblSurname"></label>
+                    </div>
+                    <div class="inputContainer">
+                        <input type="text" id="email" placeholder="Email" />
+                        <label for="email" id="lblEmail"></label>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <div class="inputContainer">
+                        <label for="countries" id="lblCountries"></label>
+                        <select id="countries" >
+                            <option value="Country" disabled selected hidden>Seleccione País</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Uruguay">Uruguay</option>
+                        </select><br>
+                    </div>
+                    <div class="inputContainer">
+                        <label for="gender" id="lblGender"></label>
+                        <select id="gender">
+                            <option value="Sexo" disabled selected hidden>Seleccione sexo</option>
+                            <option value="Hombre">Hombre</option>
+                            <option value="Mujer">Mujer</option>
+                            <option value="Otro">Otro</option>
+                        </select><br>
+                    </div>
                 </div>
                 <div class="inputContainer">
-                    <input type="text" id="surname" placeholder="Apellido">
-                    <label for="surname" id="lblSurname"></label>
-                </div>
-                <div class="inputContainer">
-                    <input type="text" id="email" placeholder="Email">
-                    <label for="email" id="lblEmail"></label>
-                </div>
-                <div class="inputContainer">
-                    <input type="password" id="password" placeholder="Password">
-                    <label for="password" id="lblPassword"></label>
-                </div>
-                <div class="inputContainer">
-                    <input type="text" id="telNumber" placeholder="Teléfono">
-                    <label for="telNumber" id="lblTelNumber"></label>
-                </div>
-                <div class="inputContainer">
-                    <input type="text" id="direction" placeholder="Dirección">
+                    <input type="text" id="direction" placeholder="Comentario" />
                     <label for="direction" id="lblDirection"></label>
                 </div>
                 <button id="submitButton" type="submit">Subscribirse</button>
             </form>
+            
         </div>
     </main>
 </body>

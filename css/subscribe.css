@@ -8,21 +8,33 @@ form{
     text-align: center;
 }
 
+
+p{
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
 .subscribeForm {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  border: 3px solid #d00c0c;
+  border: 3px solid #ffffff;
+}
+
+.left-column{
+  float: left;
+}
+
+.right-column{
+  float: right;
 }
 
 .inputContainer {
-
   padding: 10px;
   border: 1px solid black ;
   border-radius: 5px;
   background-color: #ececee;
-  /* box-shadow: 01px 10px 15px #e7c4c4, -10px -10px 15px #fff; */
 }
 
 .inputContainer input {
@@ -34,6 +46,21 @@ form{
   background-color: #ececee;
 }
 
+.inputContainer select {
+  font-size: 18px;
+  color: #000;
+  padding: 15px 10px;
+  border: none;
+  outline: none;
+  background-color: #ececee;
+  width: 100%;
+
+}
+
+#countries{
+  direction: initial;
+}
+
 #submitButton {
   color: #fff;
   padding: 15px 20px;
@@ -43,3 +70,17 @@ form{
   background: #5959d4;
   margin-top: 20px;
 }
+
+@media (max-width: 800px) {
+
+
+
+
+}
+
+
+
+
+/* DROPDOWN TESTING */
+
+
