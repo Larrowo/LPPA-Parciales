@@ -1,0 +1,45 @@
+
+/* Formulario de subscripción */
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.subscribeForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  border: 3px solid #d00c0c;
+}
+
+.inputContainer {
+
+  padding: 10px;
+  border: 1px solid black ;
+  border-radius: 5px;
+  background-color: #ececee;
+  /* box-shadow: 01px 10px 15px #e7c4c4, -10px -10px 15px #fff; */
+}
+
+.inputContainer input {
+  font-size: 18px;
+  color: #000;
+  padding: 15px 10px;
+  border: none;
+  outline: none;
+  background-color: #ececee;
+}
+
+#submitButton {
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: #5959d4;
+  margin-top: 20px;
+}
