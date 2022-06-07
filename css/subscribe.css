@@ -1,5 +1,7 @@
 /* Formulario de subscripción */
 
+
+
 form {
   display: flex;
   justify-content: center;
@@ -8,7 +10,9 @@ form {
   border:3px solid rgb(218, 238, 218);
   border-radius: 10px;
   box-shadow: 5px 5px 10px;
-  width: 40vw;
+  margin-top: 370px;
+ overflow: auto;
+ box-sizing:border-box;
 }
 
 p {
@@ -29,10 +33,14 @@ p {
 
 .inputContainer {
   padding: 10px;
-  border: 1px solid #000000;
+  border: 3px solid #ffffff;
   border-radius: 5px;
   background-color: #ececee;
   margin: 10px;
+}
+
+.inputContainer.comentario{
+height: 200px
 }
 
 .inputContainer input {
@@ -60,19 +68,92 @@ p {
 #countries {
   direction: initial;
 }
+/* submit button */
 
 #submitButton {
   color: #fff;
-  padding: 15px 20px;
+  height: 60px;
   font-size: 20px;
   border: 1px solid black;
   border-radius: 5px;
   background: #5959d4;
   margin-top: 20px;
-}
-
-@media (max-width: 800px) {
+  margin: 10px;
 
 }
+
+#submitButton:hover{
+  cursor:pointer;
+  font-size: 23px;
+  -webkit-transition: font-size .5s ease;
+  -moz-transition: font-size .5s ease;
+  -o-transition: font-size .5s ease;
+  transition: font-size .5s ease;
+  }
+
+
+
+/* error color handling */
+
+
+.inputContainer.success {
+  border-color: #09c372;
+}
+
+.inputContainer.error {
+  border-color: #ff3860;
+}
+
+.inputContainer .error {
+  color: #ff3860;
+  font-size: 14px;
+  height: 13px;
+}
+
+/* checkbox styling */
+
+
+.check-box-group {
+  display: flex;
+  flex-flow:wrap;
+  justify-content: space-between;
+  
+}
+
+.custom-checkbox {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+ 
+}
+
+.custom-checkbox .label {
+  font-size: 1.2em;
+  margin: 0 10px;
+}
+
+.custom-checkbox .checkmark {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #222;
+  display: inline-block;
+  border-radius: 3px;
+  background: rgb(0, 0, 0) url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/1200px-White_check.svg.png) center/1250% no-repeat;
+  transition: background-size 0.2s ease;
+}
+
+.custom-checkbox input:checked + .checkmark {
+  background-size: 60%;
+  transition: background-size 0.25s cubic-bezier(0.7, 0, 0.18, 1.24);
+}
+
+.custom-checkbox input {
+  display: none;
+}
+
+
+
+
 
 

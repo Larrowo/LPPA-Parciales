@@ -39,56 +39,87 @@
     </nav>
     <main class="subscribeMainPage">
         <div class="subscribeForm">
-            <form action="#">
+            <form action="#" id="form">
                 <p>Formulario de subscripcion</p>
 
                 <div class="inputContainer">
                     <input type="text" id="name" placeholder="Nombre" />
-                    <label for="name" id="lblName"></label>
+                    <div class="error"></div>
                 </div>
                 <div class="inputContainer">
                     <input type="text" id="surname" placeholder="Apellido" />
-                    <label for="surname" id="lblSurname"></label>
+                    <div class="error"></div>
+
                 </div>
                 <div class="inputContainer">
                     <input type="text" id="email" placeholder="Email" />
-                    <label for="email" id="lblEmail"></label>
+                    <div class="error"></div>
                 </div>
                 <div class="inputContainer">
                     <input type="text" id="age" placeholder="Edad" />
-                    <label for="age" id="lblAge"></label>
+                    <div class="error"></div>
                 </div>
 
 
                 <div class="inputContainer">
                     <label for="countries" id="lblCountries"></label>
                     <select id="countries">
-                        <option value="Country" disabled selected hidden>Seleccione País</option>
+                        <option value="default" disabled selected hidden>Seleccione País</option>
                         <option value="Argentina">Argentina</option>
                         <option value="Brasil">Brasil</option>
                         <option value="Chile">Chile</option>
                         <option value="Uruguay">Uruguay</option>
                     </select>
+                    <div class="error"></div>
                 </div>
                 <div class="inputContainer">
                     <label for="gender" id="lblGender"></label>
                     <select id="gender">
-                        <option value="Sexo" disabled selected hidden>Seleccione sexo</option>
+                        <option value="default" disabled selected hidden>Seleccione sexo</option>
                         <option value="Hombre">Hombre</option>
                         <option value="Mujer">Mujer</option>
                         <option value="Otro">Otro</option>
                     </select>
+                    <div class="error"></div>
                 </div>
 
 
-                <div class="inputContainer">
+                <div class="inputContainer comentario">
                     <input type="text" id="direction" placeholder="Comentario" />
-                    <label for="direction" id="lblDirection"></label>
+                    <div class="error"></div>
                 </div>
 
                 <div class="inputContainer">
-                    
-                    
+                    <label class>Intereses</label>
+                    <div class="check-box-group">
+                        <label class="custom-checkbox">
+                          <input type="checkbox" checked>
+                          <span class="checkmark"></span>
+                          <span class="label">Deportes</span>
+                        </label>
+                      
+                        <label class="custom-checkbox">
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                          <span class="label">Música</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <span class="label">Juegos</span>
+                          </label>
+                          <label class="custom-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <span class="label">Tecnología</span>
+                          </label>
+                          <label class="custom-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <span class="label">Otro</span>
+                          </label>
+                      </div>
+                      <div class="error"></div>
                 </div>
 
 
