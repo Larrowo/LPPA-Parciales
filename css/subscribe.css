@@ -10,7 +10,7 @@ form {
   border:3px solid rgb(218, 238, 218);
   border-radius: 10px;
   box-shadow: 5px 5px 10px;
-  margin-top: 300px;
+  margin-top: 370px;
  overflow: auto;
  box-sizing:border-box;
 }
@@ -33,7 +33,7 @@ p {
 
 .inputContainer {
   padding: 10px;
-  border: 1px solid #000000;
+  border: 3px solid #ffffff;
   border-radius: 5px;
   background-color: #ececee;
   margin: 10px;
@@ -68,22 +68,49 @@ height: 200px
 #countries {
   direction: initial;
 }
+/* submit button */
 
 #submitButton {
   color: #fff;
-  padding: 15px 20px;
+  height: 60px;
   font-size: 20px;
   border: 1px solid black;
   border-radius: 5px;
   background: #5959d4;
   margin-top: 20px;
-}
-
-@media (max-width: 800px) {
+  margin: 10px;
 
 }
 
+#submitButton:hover{
+  cursor:pointer;
+  font-size: 23px;
+  -webkit-transition: font-size .5s ease;
+  -moz-transition: font-size .5s ease;
+  -o-transition: font-size .5s ease;
+  transition: font-size .5s ease;
+  }
 
+
+
+/* error color handling */
+
+
+.inputContainer.success {
+  border-color: #09c372;
+}
+
+.inputContainer.error {
+  border-color: #ff3860;
+}
+
+.inputContainer .error {
+  color: #ff3860;
+  font-size: 14px;
+  height: 13px;
+}
+
+/* checkbox styling */
 
 
 .check-box-group {
@@ -124,3 +151,9 @@ height: 200px
 .custom-checkbox input {
   display: none;
 }
+
+
+
+
+
+
